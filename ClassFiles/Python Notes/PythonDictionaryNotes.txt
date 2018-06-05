@@ -1,0 +1,52 @@
+what t is the data type of x?
+x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3'} Dictionary data type
+
+Dictionary: an item consists of a pair of key and value, use {} rather than [], 
+A pair of key and value
+'CIS' key
+350 value
+
+Differences between lists and dictionaries
+List: Single value items, integer index, ordered(Index1, index2)
+Dictionary: A pair of key and value, different data types(key), unordered
+
+x.value() = method, attached to a value
+dict_values(350, '10:00am to 10:50am 'MWF', 3
+dict_keys('CIS', 'Time', 'Credit')
+
+Converting to list
+x.values()
+dict_values(350, '10:00am to 10:50am 'MWF', 3)
+[350, '10:00am to 10:50am 'MWF', 3]
+
+
+
+If x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3'} what is the output of each line of code?
+>>> x['Time'] = '12:30pm to 1:15pm, TH'
+>>> x['Time']
+>>> x.values()
+>>> x.items()
+>>> x.keys() = 'CIS', 'Time', 'Credit'
+>>> for vi in x.values():
+print(vi)
+>>> for vi in x.items():
+print(vi)
+>>> for vi in x.keys():
+print(vi)
+
+If x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3'} what is the output of each line of code?
+>>> list(x.values())
+>>> list(x.keys()) 
+>>> 'CSCI' in x.keys() = false
+>>> '3' not in x.values() = true
+>>> for k, v in x :
+	print('Keys and values are in the format of Key: ' + k + ' Value: ' + str(v)) = key: CIS ,Value: 350 Key: Time, Value:'10:00am to 10:50am' Key: Credit, Value: 3
+>>> x['room'] = 'Mck228'
+>>> x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3', 'Room': 'Mck228'}
+>>> x.setdefault('T', 'Yes')
+>>> x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3', 'Room': 'Mck228', 'T': 'Yes'}
+>>> x.setdefault('Room', 'Mck213')
+>>> x = {'CIS': 350', 'Time': '10am to 10:50am MWF', 'Credit :3', 'Room': 'Mck213'}
+
+
+

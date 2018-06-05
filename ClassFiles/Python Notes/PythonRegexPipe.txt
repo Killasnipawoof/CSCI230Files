@@ -1,0 +1,29 @@
+Pipe symbol: |(same as logical or)
+
+import re
+phRegex1 = re.compile(r '\d{3}-\d{3}-\d{4} | \(\d{3}) (\d{3}-\d{4})')
+mo1 = phRegex1.search('My phone number is 540-123-4567 or \(540) 123-4567')
+mo1.group()#Will output 540-123-4567
+
+import re
+phRegex1 = re.compile(r '\d{3}-\d{3}-\d{4} | \(\d{3}) (\d{3}-\d{4})')
+mo2 = phRegex1.search('My phone number is (540) 123-4567 or 540-123-4567')
+mo2.group() #Will output (540) 123-4567
+ 
+import re
+phRegex1 = re.compile(r '\d{3}-\d{3}-\d{4} | \(\d{3}) (\d{3}-\d{4})')
+mo2 = phRegex1.findall('My phone number is (540) 123-4567 or 540-123-4567')
+mo2.group() #Will output [(540) 123-4567, 540-123-4567] a list 
+
+phRegex1 = re.compile(r '\d{3}(\d{3}-\d{4} | \(\d{3})-(\d{3}-\d{4})')
+mo2 = phRegex1.search('My phone number is (540) 123-4567 or 540-123-4567')
+mo2.group() #Will output (540) 123-4567 or 540 123-4567
+
+phRegex1 = re.compile(r '\d{3}(\d{3}-\d{4} | \(\d{3})-(\d{3}-\d{4})')
+mo3 = phRegex1.search('My phone number is (540) 123-4567 or 540-123-4567')
+mo3.group() #Will output 540
+
+phregex1 = re.compile(r '\d{3}(\d{3}-\d{4} | \(\d{3})-(\d{3}-\d{4})')
+mo3 = phRegex1.search('My phone number is (540) 123-4567 8009)
+mo3.group(1) #Will output the first match 123-4567
+

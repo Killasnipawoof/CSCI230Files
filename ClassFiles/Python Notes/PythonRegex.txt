@@ -1,0 +1,24 @@
+What is a regular expression? String Pattern
+
+Is \d, a regex? If yes, what does it mean? A: Digit 0-9
+
+Example of creating a regex
+>>> import re
+>>> phNumRegex = re.compile(r '\d{3}-\d\{3}-\d{4}') r represets raw string, \ represents escape, 
+
+\d{3} == \d\d\d
+\d{3}
+\d{4} == \d\d\d\d
+
+Example 2
+import re
+phNumRegex2 = re.compile(r '(\d{3})-(\d\{3}-\d{4})')
+
+grouped regex when you use brackets, extract one group at a time
+
+Search with a regex:
+phSearch = phNumRegex.search('His office phone is '540-123-4567') #Pass the string to the search method
+print('Found phone number:' + phSearch.group()) #Will either return a Matched Value or None
+
+phSearch2 = phNumRegex2.search('His office phone is '540-123-4567')
+print('Found phone number:' + phSearch2.group(1)) #If you pass 1, will return local phone number, else will return whole phone number

@@ -1,0 +1,8 @@
+if phNumRegex3 = re.compile(r '(\d{3}-(\d\{3}-\d{4})'), and phSearch3 = phNumRegex3.search('540-123-4567'), what is the output?
+
+>>> print('Found phone number: ' + phSearch3.groups())
+>>> areaCode, bodyNum = phSearch3.groups()
+>>> print(bodyNum)
+
+If the phone number is in the form of (xxx) (xxx-xxxx), create a python regex and script, which enable you to search the phone numbers matching the regex in a text.
+

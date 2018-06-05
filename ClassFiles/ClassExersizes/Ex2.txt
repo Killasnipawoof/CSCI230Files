@@ -1,0 +1,11 @@
+1. Find out what each of these commands do, and try out each command using the files tracked by git
+
+git log
+git log -p
+git log -p -2
+git log --stat
+git log --pretty
+git log -since=1.day
+git grep --all-match -e 
+git grep -e enjoy --or -e Note
+git grep -e enjoy --and -e CU

@@ -1,0 +1,3 @@
+Hello, World!
+I love programming, it is great fun!
+Dr. Flory's class is especially good!

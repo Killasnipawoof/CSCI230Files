@@ -1,0 +1,9 @@
+1. Scripting problems: All easy, one hard, use logic
+
+2 Sets of problems, adjacent person gets a different set
+
+2. Cannot leave classroom without justification, if leave, exam is submitted as is\ Policies
+
+3. Exam is open book, open note, both Python and Bash
+
+Python topics: User Management, Formatting text, Search w\Regex & pipe

@@ -1,0 +1,2 @@
+1. git remote add origin master http://www.github.com/killasnipawoof
+2. git clone http://www.github.com/killasnipawoof/230GitStatus

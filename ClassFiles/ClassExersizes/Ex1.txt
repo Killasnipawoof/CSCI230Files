@@ -1,0 +1,9 @@
+1. Make some changes im studynote.txt, then save the file
+
+2. Check your work status in Git
+
+3. Stage the studynote.txt
+
+4. Commit the studynote.txt
+
+5. Check Git work status

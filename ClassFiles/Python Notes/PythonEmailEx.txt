@@ -1,0 +1,26 @@
+Suppose that all the emails in the inbox are saved in a list, and a Binary File
+Write a python script that enables system administrators to count the number of emails about a specific subject
+
+emails = ['ef0','ef1','ef2','ef3']
+Bmail['emails'] = emails #Write emails into a binary file 
+>>> import shelve, re #Import the Shelve and Regex Modules
+>>> bMail= shelve.open('emailIdx')#open the Binary File, and opens, if not exist
+>>> list(biFilevalues()) 
+
+
+>>> topicRegex = re.compile(r'subject:[a-z0-9!$&?,;:\s]*',re.I)#Make a search Regex, to retrieve subject, and save it in topicRegex
+>>> topicRegex.findall('''(tEmail[0][1])''') #Email may have multi line, triple quotes help retrieve multiple lines, 
+#Will grab 'e0' and 'e1' from bMail, will output subject list
+
+
+1. import shelve
+2. bMail = shelve.open('eIndx')
+3. emails = ['e0','e1','e2','e3']
+4. bMail['emails'] = emails #Write to binary files
+5. bMail.key() #Will output ['emails'] will look like list, but not actually
+list(bMail.key()) #Will output ['emails'] in proper list format
+
+6. list(bmail.values()) #Will output [['e0','e1','e2','e3']]
+
+Suppose the dates on which emails were sent are in two formats: yyyy-mm-dd and mm/dd/yyyy. 
+Write a python script that enables sys admins to change all sending dates of the emails in the boxes to the format of dd-mm-yyyy

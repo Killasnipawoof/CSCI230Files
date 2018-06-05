@@ -1,0 +1,30 @@
+Write a bash script to install the Python Package
+
+sudo apt install python3
+
+How do you switch from the Bash shell to the Python interactive shell?
+python3
+
+How do you open and close the python 'help' menu in the Interactive shell?
+help()
+
+Switch from python shell back to bash shell?
+CTRL + C 
+quit()
+
+How can you write, save, and run a python script?
+sudo vim /home/username/pythonscript.py
+:wq
+Python3 /home/username/pythonscript.py
+
+In the shell
+import readline
+readline.write_history_file('home/username/pythonscript')
+execfile('/home/username/pythonscript.py')
+
+Write a python script for systems administrators to setup access control on servers. The script should meet at least the following requirements
+1. the script needs to fetch the username and password from a plain file
+2. A system admin can setup a limit to the number of times a wrong username or password can be entered for each login attempt
+3. After the limit is reached, the script should the user access denied
+
+

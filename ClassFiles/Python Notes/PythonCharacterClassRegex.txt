@@ -1,0 +1,30 @@
+Creating Regexes
+
+>>> Regex1 = re.compile(r'[a-gA-E1-3]') # == '[a|b|c|d|e|f|g]' + '[|A|B|C|D|E]' + '[1|2|3]'
+>>> Regex1.findall('1 plus 2 equals 3. Correct in math.') #Will output ['1','2','e','a','3','C','e','c','a']
+
+>>> Regex1 = re.compile(r'[aeAE]')
+>>> Regex1.findall('A story is a narrative, generally easy to read.') #Will output ['A','a','a','a','e','e','e','a','e','a','e','a']
+
+The regex will pick up any letter or character in range
+
+>>> Regex1 = re.compile(r'[a-gA-E1-3]') 
+>>> mo1 = Regex1.search(1 plus 2 equals 3. Easy research often lack quality.')
+>>> mo1.group() #Will output 1 only
+
+>>> Regex1 = re.compile(r'[^a-gA-E1-3]')
+>>> Regex1.findall('1 plus 2 equals 3. Correct in math.') #Will output [' ','p','l','u','s',' ',' '] everything not included in the above regex 
+
+Using Regexes to change texts
+1. Create a Regex, 2. use sub()
+>>> Regex1 = re.compile(r'story \w+')# story, space, then one or more \w
+>>> Regex1.sub('truth and ','A story is a narrrative')# Will output 'A truth and a narrative')
+
+>>> Regex1 = re.compile(r'\w+')#w ignores the space
+>>> Regex1.sub('truth,'A story is a narrative.')# Will output 'A truth and a narrative')# Will output 'truth truth truth truth truth.'
+
+Case-Insensitive Search
+>>> Regex1 = re.compile(r'stu',re.I)# Could also use re.IGNORECASE
+>>> Regex1.findall('Students study history') #Will output ['Stu', 'stu']
+
+

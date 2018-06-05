@@ -1,0 +1,31 @@
+Git Config
+
+1. Setup a user account
+git config --global user.email "you@email.com"
+git config --global user.name "username"
+
+2. Setup user enviroment
+git config --global color.ui "auto"
+git config --global core.editor "text editor (vim, nano)"
+
+3. Create git repository
+git init /home/uname/bin/gitbin
+
+4. Check for the newly created git repository in the location
+ls -a
+
+Adding files to Git 
+1. Check working status
+git status 
+
+2. Create 2 files (welcome.sh and studynotes.txt) in the gitbin directory and commit them
+use git add file1 file2 
+
+3. Check status
+git status
+
+4. Commit Changes
+git commit -m
+
+5. Check Status
+git status

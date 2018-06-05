@@ -1,0 +1,3 @@
+1. Create three files, Doc1.pdf, Doc2.log and Doc3.aux
+
+2. Check Your Work status

@@ -1,0 +1,51 @@
+What are the outputs of the following lines of code?
+>>> float(1567)
+1567
+>>> float ('1567')
+'1567'
+
+>>> print('My son Jason is ' + len('Jason is a software engineer.') + 'years old.' 
+Error: Cannot convert int to String
+
+Correction to above statement
+print('My son Jason is ' + str(len('Jason is a software engineer.') + years old.'
+My son Jason is 24 years old.
+
+>>> 23 == '23'
+>>> 23 == 123
+>>> 23 != 32
+>>> len('MyClass') <= len('My Class')
+>>> 'Good Morning' == 'Good morning'
+>>> 109 == 109.0
+>>> True and True
+>>> True and False
+>>> False and False
+>>> False or False
+>>> True or True
+>>> False or True
+>>> not False 
+>>> not True
+>>> not not not False
+>>> (12.7 > 10) AND (0.05 < 0.001)
+>>> (25 == 25.0) OR (0.05 < 0.001)
+
+
+What will be the output when the user inputs 55, 75, 85 or 95?
+myGrade = input()
+if myGrade < 60:
+   print('poor')
+elif myGrade > 70:
+   print('Acceptable')
+elif myGrade > 80:
+   print('OK')
+elif myGrade > 90:
+   print('Good')
+
+The series of elif is very important in the program's logic
+
+while loop Example
+repeatNum = 0
+while repeatNum <= 7:
+   print('Review this lesson')
+   repeatNum = repeatNum + 1The series of elif is very important in the program's logic
+

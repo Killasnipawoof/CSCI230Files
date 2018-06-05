@@ -1,0 +1,140 @@
+Python, A high level general-purpose programming language, Multi-Tool
+
+1. What does IDLE stand for in the Python enviroment? A: Interactive Development(DL) Enviroment, also an Interactive Shell
+
+2. What does a prompt on the Python IDLE terminal look like? A: >>>
+
+3. Example of a python comment? A: #This is a python comment
+
+4. Why do we use comments? A: 1. To descrbe what a function does in a program, Code Maintenence, 2. Easy Debugging, 3. Code reusability/Documentation
+
+5. What do int, float and str stand for? A: int: Integer, float: Floating-Point Number, str: String
+
+6. What is an expression in the Python language? A: One unit, executable, consistant of operators and values, can be reduced to a single value.
+>>> 2+4 >>> 'h' >>> 'Hello, World!' >>> 4
+6       'h'     'Hello, World!'     4 
+
+Operators:
+**: Exponential
+%: Remainder/Modulus
+//: Integer Division 6//5 = 1 11/3 = 3 (Will round down (floor) the result
+/: Division
+*: Multiplication/Repitition
+-: Subtraction
++: Addition
+
+Data Type dependancy
+>>> 'Hello' + 'World' 
+'HelloWorld' 
+
+>>> 'John's ID is' + 1235
+error: Cannot add string to integer
+
+>>> 'John's ID is ' + '1235'
+>>> 'John's ID is ' + str(1235)
+'John's ID is 1235'
+
+str() function: Converts integer or floating point to strings
+int() function: Converts string to digit form
+
+>>> int('1235')
+1235
+>>>int(10.23)
+10
+>>>int(10.99)
+10
+>>> 'Oh' * 3
+'Oh Oh Oh'
+>>> 'Oh' * 3.2
+error: Cannot print .2 more times
+>>> 'Oh' * int(3.0)
+'Oh Oh Oh'
+
+7. How do you create variable in Python?
+Don't have to declare a data type: Price = 3, VariableName = Assignment
+One Word, Letters, Numbers, and underscores are OK, It Can't begin with a number
+
+8. What is the Python convention for variable names?
+Camelcase: priceCheck studentName
+
+9. What is one thing that Python pin = input() do?
+input() function: Takes in keyboard input, prompts user for input, assigns a string input as a string value
+
+If Statement Example
+name = input()
+if name == 'SuperPC':
+	print('Enter your password:')
+
+Condition: if keyword, condition(Boolean Expression), colon
+if clause: indentation
+
+If... Else Statement Example
+name = input()
+if name == 'SuperPC':
+	print('Enter your password')
+else:
+	print('Sorry, Wrong username')
+
+
+If... Elif(If-Else) Statement example
+if name = 'SuperPC':
+	print('Enter your password:')
+elif name == 'Admit':
+	print('Sorry, Wrong username')
+
+The series of elif is very important in the program's logic
+ 
+while loop Example
+repeatNum = 0
+while repeatNum <= 7:
+	print('Review this lesson')
+	repeatNum = repeatNum + 1
+
+for loop example
+for x in range(3):
+	print('No.('+str(x) + ')')
+
+How you make a new python script
+sudo vim /home/username/pythonscript.py
+:wq
+Python3 /home/username/pythonscript.py
+
+In the shell
+import readline
+readline.write_history_file('home/username/pythonscript')
+execfile('/home/username/pythonscript.py')
+
+
+How to use Python IDLE's standard libraries
+>>> import math
+>>> math.round()
+
+>>> import sys, os, random
+>>> random.randin(1, 100)
+
+>>> from random import *
+>>> randin(1, 100)
+
+How to fetch data from text file
+>>> pwFile = open('usrpw.txt')
+>>> pwData = pwFile.read()
+>>> 'Good Morning' in pwData #Search for data within the file
+
+Function in the context of an Object Oriented Programming Languages
+A Function in any object oriented programming language is a named block of code that does a specfic job or task
+
+Characteristics of a function
+1. name and a pair of parentheses, possible parameters
+2. definition and body
+	def greeting(name)
+	print('Welcome, ' + name)
+3. Has a return value(none, return statement
+	def aScript()
+	name = put()
+	return name
+4. local scope
+5. To be used by a call
+
+Functions can be useful for code debugging, maitenence and Code Reusability
+
+
