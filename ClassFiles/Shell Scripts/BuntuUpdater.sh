@@ -14,7 +14,7 @@ sudo apt-get autoremove -y;
 #Cleanup
 sudo apt-get autoclean -y;
 read -p "Would you like to reboot the system?" ans
-if [ $ans == y ]; then
+if [ $ans == y ] || [$ans == Y ]; then
 	sudo reboot now
 else
 	exit 0
