@@ -13,9 +13,10 @@ sudo apt-get dist-upgrade -y;
 sudo apt-get autoremove -y;
 #Cleanup
 sudo apt-get autoclean -y;
-read -p "Would you like to reboot the system?" ans
-if [ $ans == y ] || [$ans == Y ]; then
+read -p "Would you like to reboot the system? " ans
+if [ $ans == y ] || [ $ans == Y ]; then
 	sudo reboot now
 else
 	exit 0
 fi
+exit 0
