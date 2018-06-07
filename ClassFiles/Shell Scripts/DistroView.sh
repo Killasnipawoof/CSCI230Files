@@ -4,9 +4,10 @@
 # Author - Thomas Hohnke
 # Version - V1
 
-read -p "Would you like to know your Linux distro?" ans
+cat /etc/*-release
+read -p "Save Info? " ans
 if [ $ans == "Y" ] || [ $ans == "y" ]; then
-   cat /etc/*-release
+   	cat /etc/*-release > DistroInfo.txt
 else
    exit 0
 fi
