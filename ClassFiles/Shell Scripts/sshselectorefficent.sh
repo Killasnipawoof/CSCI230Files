@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "Please enter the number of the server you wish to connect to\n1. Lab Server \n2. cs.bridgewater.edu \n3. Home Arch Server Internal \n4. Home Arch Server External" 
+echo -e "Please enter the number of the server you wish to connect to\n1. Lab Server \n2. cs.bridgewater.edu \n3. Home Arch Server Internal \n4. Home Arch Server External \n5. Other Server" 
 read num
 if [ $num == 1 ]; then
 read -p "What's your username?" servuser
@@ -18,6 +18,10 @@ elif [ $num == 4 ]; then
 read -p "Username?" user
 echo "Welcome $user, to Thomas's Archlinux deluxe server!"
 ssh $user@71.63.37.207
+elif [ $num == 5 ]; then
+read -p "Address?: " addr
+read -p "Username?: " user
+ssh $addr@$user
 else
 echo "Number is not valid, exiting."
 exit 0
