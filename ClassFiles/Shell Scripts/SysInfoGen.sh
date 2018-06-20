@@ -1,4 +1,4 @@
-#This script allows battery info to be viewed on a linux machine, and then prompts the user to save the file if they so wish
+#This script allows system info to be viewed on a linux machine, and then prompts the user to save the file if they so wish
 #Author - Thomas Hohnke 
 #Version - V1 2018
 
