@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "Please enter the number of the server you wish to connect to\n1. Lab Server \n2. cs.bridgewater.edu \n3. Home Arch Server Internal \n4. Home Arch Server External \n5. Other Server" 
+echo -e "Please enter the number of the server you wish to connect to\n1. Lab Server \n2. cs.bridgewater.edu \n3. Home Arch Server Internal \n4. Home Arch Server External \n5. Rasberry Pi \n6. Other Server" 
 read num
 	if [ $num == 1 ]; then
 		read -p "What's your username?: " servuser
@@ -23,6 +23,11 @@ read num
 		ssh $user@71.63.37.207
 
 	elif [ $num == 5 ]; then
+		read -p "Username?: " user
+		echo "Welcome $user, to Thomas`s Rasberry Pi, a Linux in an ARM environment!"
+		ssh $user@192.168.1.43
+
+	elif [ $num == 6 ]; then
 		read -p "Address?: " addr
 		read -p "Username?: " user
 		ssh $user@$addr
