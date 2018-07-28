@@ -24,7 +24,7 @@ read num
 
 	elif [ $num == 5 ]; then
 		read -p "Username?: " user
-		echo "Welcome $user, to Thomas`s Rasberry Pi, a Linux in an ARM environment!"
+		echo "Welcome $user, to Thomas's Rasberry Pi, a Linux in an ARM environment!"
 		ssh $user@192.168.1.43
 
 	elif [ $num == 6 ]; then
